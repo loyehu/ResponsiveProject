@@ -1,0 +1,322 @@
+
+/*通用样式*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 18px;
+}
+/*媒体查询*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	html{
+		font-size: 16px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	html{
+		font-size: 13px;
+	}
+}
+@media screen and (max-width: 768px) {
+	html{
+		font-size: 12px;
+	}
+}
+.clear{
+	clear: both;
+}
+
+/*地址信息内容部分*/
+.cartout-section{
+	margin: 0 auto;
+	padding: 20px 0;
+	min-width: 770px;
+}
+.cartout-section .section-header{
+	width: 100%;
+	margin: 0 auto;
+}
+.section-header .section-header-col{
+	padding: 0;
+}
+.section-header .section-header-col img{
+	width: 100%;
+}
+.cartout-section .cartout-title{
+	width: 100%;
+	padding: 5% 0 1% 0;
+	margin: 0 auto;
+	margin-top: 0.5%;
+}
+.cartout-title .cartout-title-list{
+	width: 100%;
+}
+.cartout-title .cartout-title-list ul{
+	width: 280px;
+	margin: 0 auto;
+	list-style: none;
+}
+.cartout-title .cartout-title-list ul li{
+	float: left;
+	padding: 0 20px;
+	font-size: 13px;
+}
+.cartout-title .cartout-title-list ul li:nth-child(4){
+	color: #6393B4;
+}
+.cartout-section .gain-address{
+	width: 100%;
+	margin: 0 auto;
+	/*background-color: darkgoldenrod;*/
+	font-size: 17px;
+	padding: 5px 0;
+	text-indent: 3px;
+	border-bottom: 1px solid #807F7F;
+}
+/*添加地址显示信息*/
+.cartout-section .address-infor{
+	width: 100%;
+	margin: 0 auto;
+}
+.cartout-section .address-infor .address-list{
+	margin-top: 10px;
+	padding: 20px;
+}
+.address-list .address-li{
+	border: 2px solid #7fa6c5;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+}
+.address-li .person-infor{
+	width: 100%;
+	height: 30px;
+	/*background-color: darkviolet;*/
+	line-height: 30px;
+	border-bottom: 1px solid #EDEDED;
+	color: #333333;
+	font-size: 13px;
+}
+.address-li .person-infor span:nth-child(1){
+	float: left;
+	margin-left: 3px;
+}
+.address-li .person-infor span:nth-child(2){
+	float: right;
+	margin-right: 3px;
+}
+.address-li .province-city{
+	color: #999999;
+	font-size: 12px;	
+}
+.address-li .detail-address{
+	color: #999999;
+	font-size: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+.address-li .compile{
+	float: left;
+	margin-left: 70%;
+	color: #999999;
+	cursor: pointer;
+}
+.address-li .delete{
+	float: right;
+	margin-right: 5px;
+	color: #999999;
+	cursor: pointer;
+}
+.newAddress{
+	margin-left: 5px;
+}
+.newAddress .newAddress-col label{
+	margin-bottom: 20px;
+}
+
+/*地址信息输入框*/
+.cartout-section .cartout-form-row{
+	width: 100%;
+	margin: 0 auto;
+	padding: 50px 0;
+	display: none;
+}
+.cartout-form-row .cartout-form p{
+	color: #777777;
+	margin: 0 0 15px;
+}
+.cartout-form-row .cartout-form p input{
+	outline: none; 
+	width: 240px;
+	border: 2px solid #dedede;
+}
+.cartout-form-row .cartout-form p:nth-child(1) input[name="address_name"]{
+	margin-left: 20px;
+}
+.cartout-form-row .cartout-form p:nth-child(2) input[name="province"]{
+	margin-left: 34px;
+}
+.cartout-form-row .cartout-form p:nth-child(3) input[name="city"]{
+	margin-left: 48px;
+}
+.cartout-form-row .cartout-form p:nth-child(4) input[name="district"]{
+	margin-left: 48px;
+}
+.cartout-form-row .cartout-form p:nth-child(5) input[name="address"]{
+	width: 400px;
+	margin-left: 34px;
+}
+.cartout-form-row .cartout-form p:nth-child(6) input[name="mobile"]{
+	margin-left: 48px;
+}
+.cartout-form-row .cartout-form p.save-address{
+	width: 20%;
+	padding: 7px 0;
+	margin: 30px 0 0 1%;
+	background-color: #7FA6C5;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+
+/*订单详情*/
+.cartout-section .line-item{
+	width: 100%;
+	margin: 0 auto;
+	font-size: 17px;
+	height: 30px;
+	line-height: 30px;
+	text-indent: 3px;
+	border-bottom: 1px solid #807F7F;
+}
+.line-item-content .line-item-icon{
+	width: 30px;
+	height: 30px;
+	float: right;
+	background: url(../img/open_up.png)no-repeat left top;
+	cursor: pointer;
+	margin-right: 3px;
+}
+/*订单详情列表*/
+.cartout-section .cartout-line-item{
+	width: 100%;
+	padding: 30px 0 10px;
+/*	background-color: plum;*/
+	margin: 0 auto;
+	border-bottom: 1px solid #999999;
+}
+.cartout-line-item .lineItem-order{
+	width: 100%;
+	padding: 10px 15px;
+}
+.cartout-line-item .lineItem-order .lineItem{
+	width: 100%;
+	padding: 10px 30px;
+	/*background: olivedrab;*/
+	margin: 0 auto;
+	border-bottom: 1px solid #dedede;
+}
+.lineItem .line-item-img{
+	width: 4rem;
+	height: 4rem;
+	float: left;
+}
+.lineItem .line-item-img img{
+	width: 100%;
+}
+.lineItem .line-item-name{
+	width: 35rem;
+	float: left;
+	padding: 0 20px 0 30px;
+	line-height: 4rem;
+	color: #6A6A6A;
+	font-size: 13px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.lineItem .line-item-number{
+	width: 5rem;
+	float: left;
+	line-height: 4rem;
+	color: #6A6A6A;
+	font-size: 13px;
+}
+.lineItem .line-item-price{
+	width: 6rem;
+	float: left;
+	line-height: 4rem;
+	font-size: 13px;
+	color: #6A6A6A;
+}
+
+/*订单结算*/
+.cartout-section .section-clearing{
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px 50%;
+	/*background: plum;*/
+}
+.section-clearing .clearing-inner{
+	width: 210px;
+	margin-left: -90px;
+}
+.clearing-inner .clearing-text{
+	text-align: center;
+	font-size: 13px;
+	color: #666666;
+}
+.section-clearing .clearing-inner span{
+	font-size: 17px;
+	color: #0C79D6;
+}
+.clearing-inner .clearing-btn{
+	padding: 8px 40px;
+	color: white;
+	text-align: center;
+	font-size: 13px;
+	background-color: #7FA6C5;
+	cursor: pointer;
+	margin-top: 5px;
+}
+.clearing-inner .continue-shopping{
+	width: 100%;
+	height: 30px;
+	/*background-color: plum;*/
+	text-align: center;
+	margin-top: 5px;
+}
+.continue-shopping .left-line{
+	display: block;
+	float: left;
+	margin-top: 15px;
+	width: 62px;
+	height: 1px;
+	background-color: #CCCCCC;
+}
+.clearing-inner .continue-shopping a{
+	color: #404040;
+	font-size: 13px;
+	line-height: 30px;
+}
+.clearing-inner .continue-shopping a:hover{
+	text-decoration: none;
+}
+.continue-shopping .right-line{
+	display: block;
+	float: right;
+	margin-top: 15px;
+	width: 62px;
+	height: 1px;
+	background-color: #CCCCCC;
+}
+
+
+
+
+
+
